@@ -1,0 +1,68 @@
+/* Variáveis */
+:root {
+  --bs-primary: #ff4b4b;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Home */
+.home {
+  background-color: var(--bs-primary);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.btn-explorar {
+  background-color: white;
+  color: var(--bs-primary);
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.btn-explorar:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+/* Projetos */
+.projetos-section {
+  background-color: #fff;
+  color: #333;
+  padding: 60px 20px;
+}
+
+h2.h2-vermelho {
+  font-size: 2.5rem;
+  color: var(--bs-danger);
+  margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+img.card-img-top {
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.card-projeto {
+  min-height: 440px;
+}
