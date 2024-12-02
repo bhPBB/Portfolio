@@ -3,6 +3,9 @@
   --bs-primary: #ff4b4b;
 }
   
+.modal-lg {
+  --bs-modal-width: 1000px;
+}
 body {
   font-family: Arial, sans-serif;
 }
@@ -65,4 +68,7 @@ img.card-img-top {
 
 .card-projeto {
   min-height: 440px;
+}
+.img-thumbnail {
+  height: 121px;
 }
