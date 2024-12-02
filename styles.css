@@ -69,6 +69,9 @@ img.card-img-top {
 .card-projeto {
   min-height: 440px;
 }
+.card-cert {
+  min-height: 330px;
+}
 .img-thumbnail {
   height: 121px;
 }

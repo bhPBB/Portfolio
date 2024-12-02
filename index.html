@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Script do Bootstrap -->
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Script do credly -->
+  <script type="text/javascript" defer src="//cdn.credly.com/assets/utilities/embed.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
   <!-- Box Icons -->
@@ -23,8 +25,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificacoes">Certificações</a></li>          
           <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Entre em Contato</a></li>
         </ul>
@@ -35,21 +38,47 @@
   <!-- Home -->
   <main class="home" id="home">
     <div class="container">
-      <h2>Olá, eu sou o Bruno Bomfim</h2>
-      <p>Sou um desenvolvedor especializado em <b>Cloud</b> que possui a certificação de Associate Cloud Engineer da <b>Google Cloud</b>. Amo conhecer novas linguagens de programação! Já trabalhei com <b>Python, Java, C# e JavaScript</b>. Também já desenvolvi aplicações para diversas plataformas, sendo elas: <b>Desktop, Web, Mobile (com React-Native) e Android nativo (com Java)</b></p>
-      <a href="#habilidades" class="btn btn-explorar">Habilidades</a>
-      <a href="#projetos" class="btn btn-explorar">Projetos</a>
-      <a href="#contatos" class="btn btn-explorar">Entre em Contato</a>
+      <div class="row align-items-center">
+        <!-- Coluna da Foto -->
+        <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+          <img src="foto_perfil.jpg" alt="Bruno Bomfim" class="img-fluid rounded-circle shadow">
+        </div>
+        <!-- Coluna do Texto -->
+        <div class="col-12 col-md-9">
+          <h2>Olá, eu sou o Bruno Bomfim</h2>
+          <p>
+            Sou um desenvolvedor especializado em Cloud que possui a certificação de <b>Associate Cloud Engineer da Google Cloud</b>. 
+            Já desenvolvi aplicações para <b>Desktop e Web</b> e amo conhecer novas linguagens de programação! 
+            Já trabalhei com <b>Python, Java e C#</b>.
+          </p>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-6 col-md-3 mb-3">
+            <a href="#habilidades" class="btn btn-explorar w-100">Habilidades</a>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <a href="#certificacoes" class="btn btn-explorar w-100">Certificações</a>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <a href="#projetos" class="btn btn-explorar w-100">Projetos</a>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <a href="#contato" class="btn btn-explorar w-100">Contatos</a>
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
   </main>
-
-  <section id="habilidades" class="pt-5">
+  
+  <!-- Habilidades  -->
+  <section id="habilidades" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4 h2-vermelho">Habilidades</h2>
       <div class="row">
         <!-- Google CLoud -->
         <div class="col-md-4 col-lg-3">
-            <div class="card text-center border-danger shadow-sm mt-3">
+            <div class="card text-center  shadow-sm mt-3">
               <div class="card-body">
                 <i class="bx bxl-google-cloud bx-lg text-danger"></i>
                 <h5 class="card-title mt-1">Google Cloud</h5>
@@ -58,7 +87,7 @@
         </div>
         <!-- Django -->
         <div class="col-md-4 col-lg-3">
-          <div class="card text-center border-danger shadow-sm mt-3">
+          <div class="card text-center  shadow-sm mt-3">
             <div class="card-body">
               <i class="bx bxl-django bx-lg text-danger"></i>
               <h5 class="card-title mt-1">Django</h5>
@@ -67,7 +96,7 @@
         </div>
         <!-- Python -->
         <div class="col-md-4 col-lg-3">
-          <div class="card text-center border-danger shadow-sm mt-3">
+          <div class="card text-center  shadow-sm mt-3">
             <div class="card-body">
               <i class="bx bxl-python bx-lg text-danger"></i>
               <h5 class="card-title mt-1">Python</h5>
@@ -76,7 +105,7 @@
         </div>
         <!-- C# -->
         <div class="col-md-4 col-lg-3">
-          <div class="card text-center border-danger shadow-sm mt-3">
+          <div class="card text-center  shadow-sm mt-3">
             <div class="card-body">
               <svg width="50px" height="50px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.5 5V10M11.5 5V10M8 6.5H13M8 8.5H13M8 10L7.59787 10.2011C7.20469 10.3977 6.77114 10.5 6.33156 10.5C4.76773 10.5 3.5 9.23227 3.5 7.66844V7.33156C3.5 5.76773 4.76773 4.5 6.33156 4.5C6.77114 4.5 7.20469 4.60235 7.59787 4.79894L8 5M1.5 10.5V4.5L7.5 1L13.5 4.5V10.5L7.5 14L1.5 10.5Z" stroke="#dc3545"></path> </g></svg>              <h5 class="card-title mt-1">C#</h5>
             </div>
@@ -84,7 +113,7 @@
         </div>
         <!-- Java -->
         <div class="col-md-4 col-lg-3">
-            <div class="card text-center border-danger shadow-sm mt-3">
+            <div class="card text-center  shadow-sm mt-3">
               <div class="card-body">
                 <i class="bx bxl-java bx-lg text-danger"></i>
                 <h5 class="card-title mt-1">Java</h5>
@@ -93,7 +122,7 @@
         </div>
         <!-- PostgreSQL -->
         <div class="col-md-4 col-lg-3">
-          <div class="card text-center border-danger shadow-sm mt-3">
+          <div class="card text-center  shadow-sm mt-3">
             <div class="card-body">
               <i class="bx bxl-postgresql bx-lg text-danger"></i>
               <h5 class="card-title mt-1">Postgre SQL</h5>
@@ -102,7 +131,7 @@
         </div>
         <!-- SQL -->
         <div class="col-md-4 col-lg-3">
-          <div class="card text-center border-danger shadow-sm mt-3">
+          <div class="card text-center  shadow-sm mt-3">
             <div class="card-body">
               <i class="bx bx-data bx-lg text-danger"></i>
               <h5 class="card-title mt-1">SQL</h5>
@@ -111,7 +140,7 @@
         </div>
         <!-- HTML -->
         <div class="col-md-4 col-lg-3">
-          <div class="card text-center border-danger shadow-sm mt-3">
+          <div class="card text-center  shadow-sm mt-3">
             <div class="card-body">
               <i class="bx bxl-html5 bx-lg text-danger"></i>
               <h5 class="card-title mt-1">HTML</h5>
@@ -120,7 +149,7 @@
         </div>
         <!-- CSS -->
         <div class="col-md-4 col-lg-3">
-            <div class="card text-center border-danger shadow-sm mt-3">
+            <div class="card text-center  shadow-sm mt-3">
               <div class="card-body">
                 <i class="bx bxl-css3 bx-lg text-danger"></i>
                 <h5 class="card-title mt-1">CSS</h5>
@@ -129,7 +158,7 @@
         </div>
         <!-- Bootstrap -->
         <div class="col-md-4 col-lg-3">
-          <div class="card text-center border-danger shadow-sm mt-3">
+          <div class="card text-center  shadow-sm mt-3">
             <div class="card-body">
               <i class="bx bxl-bootstrap bx-lg text-danger"></i>
               <h5 class="card-title mt-1">Bootstrap</h5>
@@ -138,7 +167,7 @@
       </div>
       <!-- git -->
       <div class="col-md-4 col-lg-3">
-        <div class="card text-center border-danger shadow-sm mt-3">
+        <div class="card text-center  shadow-sm mt-3">
           <div class="card-body">
             <i class="bx bxl-git bx-lg text-danger"></i>
             <h5 class="card-title mt-1">Git</h5>
@@ -147,18 +176,50 @@
     </div>
     </div>
     </div>
+  </section>
+  <!-- Certificações -->
+  <section id="certificacoes" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-3 h2-vermelho">Certificações</h2>
+        <div class="row justify-content-center">
+          <!-- Certificado GCP -->
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div style="max-width: 100%; height: auto;">
+                <div data-iframe-width="100%" data-iframe-height="270" 
+                      data-share-badge-id="73bf10b7-7d38-4157-878b-fb4ac631d198" 
+                      data-share-badge-host="https://www.credly.com">
+                </div>
+            </div>
+          </div>  
+          <!-- Certificado SFPC -->
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div style="max-width: 100%; height: auto;">
+              <div data-iframe-width="100%" data-iframe-height="270" 
+                    data-share-badge-id="6f0f0125-5041-47f5-89f3-ee5b2ca7e00d"
+                    data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
+          </div>         
+          <!-- Certificado lifelong Learning -->
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div style="max-width: 100%; height: auto;">
+              <div data-iframe-width="100%" data-iframe-height="270" 
+                  data-share-badge-id="1110240f-31e2-4ac8-b2c4-b30d8ea52fa0"
+                  data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
+          </div>         
+        </div>
+    </div>
   </section>    
-
-  
-
-  <!-- Projetos Section -->
+  <!-- Projetos -->
   <section id="projetos" class="projetos-section">
     <div class="container pt-1 pb-5">
       <h2 class="text-center mb- h2-vermelho">Projetos</h2>
       <div class="row g-4">
         <!-- Card 1 -->
         <div class="col-md-4">
-          <div class="card card-projeto border-danger">
+          <div class="card card-projeto shadow-sm">
             <img src="./Screenshots/OCR/OCR teste full.png" class="card-img-top" alt="Projeto 1">
             <div class="card-body d-flex flex-column justify-content-between">
               <h5 class="card-title text-danger">Extrair Texto de PDF / Imagem</h5>
@@ -171,7 +232,7 @@
         </div>
         <!-- Card 2 -->
         <div class="col-md-4">
-          <div class="card card-projeto border-danger">
+          <div class="card card-projeto shadow-sm">
             <img src="./Screenshots/Galeria/Galeria.png" class="card-img-top" alt="Projeto 2">
             <div class="card-body d-flex flex-column justify-content-between">
               <h5 class="card-title text-danger">Galeria de Imagens</h5>
@@ -182,7 +243,7 @@
         </div>
         <!-- Card 3 -->
         <div class="col-md-4">
-          <div class="card card-projeto border-danger">
+          <div class="card card-projeto shadow-sm">
             <img src="./Screenshots/IFSP-Blazor/Home.png" class="card-img-top" alt="IFSP Blazor">
             <div class="card-body d-flex flex-column justify-content-between">
               <h5 class="card-title text-danger">IFSP</h5>
@@ -194,12 +255,64 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer py-2">
-    <p>&copy; Bruno Bomfim</p>
-  </footer>
-
+  <!-- Contatos -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 h2-vermelho">Entre em Contato</h2>
+      <div class="row justify-content-center">
+        
+        <!-- Card LinkedIn -->
+        <div class="col-md-3 mb-3">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bx bxl-linkedin bx-lg text-danger mb-3"></i>
+              <h5 class="card-title">LinkedIn</h5>
+              <p class="card-text">Veja meu perfil profissional.</p>
+              <a href="https://linkedin.com/in/bruno-bomfim-4202a3279" target="_blank" class="btn btn-danger">Acessar</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card WhatsApp -->
+        <div class="col-md-3 mb-3">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bx bxl-whatsapp bx-lg text-danger mb-3"></i>
+              <h5 class="card-title">WhatsApp</h5>
+              <p class="card-text">Entre em contato direto comigo.</p>
+              <a href="https://wa.me/19997910694" target="_blank" class="btn btn-danger">Conversar</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card E-mail -->
+        <div class="col-md-3 mb-3">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bx bxs-envelope bx-lg text-danger mb-3"></i>
+              <h5 class="card-title">E-mail</h5>
+              <p class="card-text">Envie-me um e-mail.</p>
+              <a href="mailto:brunohenrique.pbb@gmail.com" target="_blank" class="btn btn-danger">Enviar</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card Credly -->
+        <div class="col-md-3 mb-3">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bx bx-trophy bx-lg text-danger mb-3"></i>
+              <h5 class="card-title">Credly</h5>
+              <p class="card-text">Veja minhas certificações.</p>
+              <a href="https://www.credly.com/users/bruno-bomfim.341f46b4" target="_blank" class="btn btn-danger">Ver Perfil</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
   <!-- Modal  Extrair Texto -->
   <div class="modal fade" id="modalExTxt" tabindex="-1" aria-labelledby="modalExTxtLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen-sm-down modal-lg">
@@ -217,7 +330,7 @@
               <p>Um site onde você pode extrair textos de PDFs e imagens usando a API do Google Cloud Vision. Após o upload, a imagem é processada pela API e o texto detectado é exibido ao usuário. No caso de um PDF, após o upload, eles é, primeiramente, armazenado em um bucket do Cloud Storage. Após isso, é processados pela API, o texto detectado é exibido ao usuário e o PDF é deletado do bucket. O backend do site foi desenvolvido com Django e o frontend com HTML, CSS e Bootstrap.</b>
               <div class="row">
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-google-cloud bx-lg text-danger"></i>
                       <p class="card-title mt-1">Google Cloud</p>
@@ -225,7 +338,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-html5 bx-lg text-danger"></i>
                       <p class="card-title mt-1">HTML</p>
@@ -233,7 +346,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-css3 bx-lg text-danger"></i>
                       <p class="card-title mt-1">CSS</p>
@@ -241,7 +354,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-bootstrap bx-lg text-danger"></i>
                       <p class="card-title mt-1">Bootstrap</p>
@@ -251,7 +364,7 @@
               </div>
               <div class="row d-flex flex-row mt-2">
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-django bx-lg text-danger"></i>
                       <p class="card-title mt-1">Django</p>
@@ -259,7 +372,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-python bx-lg text-danger"></i>
                       <p class="card-title mt-1">Python</p>
@@ -267,7 +380,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-git bx-lg text-danger"></i>
                       <p class="card-title mt-1">Git</p>
@@ -316,7 +429,7 @@
               <p>Um site que te permite criar seu próprio banco de imagens. As imagens em si ficam guardadas em um Bucket do Cloud Storage, enquanto os dados delas, como título, descrição e categoria, e os dados da conta do usuário ficam armazenados em uma base de dados de uma instância do cloud SQL de PostgreSQL.</b>
               <div class="row">
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-google-cloud bx-lg text-danger"></i>
                       <p class="card-title mt-1">Google Cloud</p>
@@ -324,7 +437,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-html5 bx-lg text-danger"></i>
                       <p class="card-title mt-1">HTML</p>
@@ -332,7 +445,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-css3 bx-lg text-danger"></i>
                       <p class="card-title mt-1">CSS</p>
@@ -340,7 +453,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-bootstrap bx-lg text-danger"></i>
                       <p class="card-title mt-1">Bootstrap</p>
@@ -350,7 +463,7 @@
               </div>
               <div class="row d-flex flex-row mt-2">
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-django bx-lg text-danger"></i>
                       <p class="card-title mt-1">Django</p>
@@ -358,7 +471,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-python bx-lg text-danger"></i>
                       <p class="card-title mt-1">Python</p>
@@ -366,7 +479,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-git bx-lg text-danger"></i>
                       <p class="card-title mt-1">Git</p>
@@ -374,7 +487,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-postgresql bx-lg text-danger"></i>
                       <p class="card-title mt-1">Postgre SQL</p>
@@ -424,7 +537,7 @@
               <b>Tecnologias Utilizadas:</b>
               <div class="row">
                   <div class="col-6 col-md-3">
-                    <div class="card text-center border-danger shadow-sm mt-1">
+                    <div class="card text-center  shadow-sm mt-1">
                       <div class="card-body px-0 py-2">
                         <i class="bx bxl-html5 bx-lg text-danger"></i>
                         <p class="card-title mt-1">HTML</p>
@@ -432,7 +545,7 @@
                     </div>
                   </div>
                   <div class="col-6 col-md-3">
-                    <div class="card text-center border-danger shadow-sm mt-1">
+                    <div class="card text-center  shadow-sm mt-1">
                       <div class="card-body px-0 py-2">
                         <i class="bx bxl-css3 bx-lg text-danger"></i>
                         <p class="card-title mt-1">CSS</p>
@@ -440,7 +553,7 @@
                     </div>
                  </div>
                  <div class="col-6 col-md-3">
-                    <div class="card text-center border-danger shadow-sm mt-1">
+                    <div class="card text-center  shadow-sm mt-1">
                       <div class="card-body px-0 py-2">
                         <i class="bx bxl-bootstrap bx-lg text-danger"></i>
                         <p class="card-title mt-1">Bootstrap</p>
@@ -450,7 +563,7 @@
               </div>
               <div class="row d-flex flex-row mt-2">
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <svg width="50px" height="50px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.5 5V10M11.5 5V10M8 6.5H13M8 8.5H13M8 10L7.59787 10.2011C7.20469 10.3977 6.77114 10.5 6.33156 10.5C4.76773 10.5 3.5 9.23227 3.5 7.66844V7.33156C3.5 5.76773 4.76773 4.5 6.33156 4.5C6.77114 4.5 7.20469 4.60235 7.59787 4.79894L8 5M1.5 10.5V4.5L7.5 1L13.5 4.5V10.5L7.5 14L1.5 10.5Z" stroke="#dc3545"></path> </g></svg>             
                       <p class="card-title mt-1">C#</p>
@@ -458,7 +571,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
-                  <div class="card text-center border-danger shadow-sm mt-1">
+                  <div class="card text-center  shadow-sm mt-1">
                     <div class="card-body px-0 py-2">
                       <i class="bx bxl-git bx-lg text-danger"></i>
                       <p class="card-title mt-1">Git</p>
@@ -490,6 +603,10 @@
       </div>
     </div>
   </div>
-    
+
+    <!-- Footer -->
+    <footer class="footer py-2">
+      <p>&copy; Bruno Bomfim</p>
+    </footer>
 </body>
 </html>
